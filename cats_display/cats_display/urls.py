@@ -15,10 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from main.views import index, get_cat_photos
+from main.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index),
-    path('get-cat-photos/', get_cat_photos),
+    path('get-cat-photos-service-1/', get_cat_photos_service_1),
+    path('get-cat-photos-service-2/', get_cat_photos_service_2),
+    path('get-cat-photos-service-3/', get_cat_photos_service_3),
 ]

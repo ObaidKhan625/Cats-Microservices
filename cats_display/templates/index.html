@@ -25,17 +25,17 @@
         <div class="text-white text-center">
             <br>
             <br>
-            <div id="cat-photos" hx-get="/get-cat-photos/" hx-trigger="every 10s" hx-swap="innerhtml">
+            <div id="cat-photos" hx-get="/get-cat-photos-service-1/" hx-trigger="every 10s" hx-swap="innerhtml">
                 {% include 'cat_photos.html' %}
             </div>
             <br>
             <br>
             <div class="row">
-                <div class="col" id="cat-photos" hx-get="/get-cat-photos/" hx-trigger="every 10s" hx-swap="innerhtml">
+                <div class="col" id="cat-photos" hx-get="/get-cat-photos-service-2/" hx-trigger="every 10s" hx-swap="innerhtml">
                     {% include 'cat_photos.html' %}
                 </div>
                 <h1 class="col pt-5" id="cats-header">Cats</h1>
-                <div class="col" id="cat-photos" hx-get="/get-cat-photos/" hx-trigger="every 10s" hx-swap="innerhtml">
+                <div class="col" id="cat-photos" hx-get="/get-cat-photos-service-3/" hx-trigger="every 10s" hx-swap="innerhtml">
                     {% include 'cat_photos.html' %}
                 </div>
             </div>
