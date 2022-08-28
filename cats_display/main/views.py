@@ -8,21 +8,21 @@ def index(request):
     return render(request, 'index.html')
 
 def get_cat_photos_service_1(request):
-    url = "http://127.0.0.1:8001/"
+    url = "http://172.22.0.2:8000/"
     r = requests.get(url)
     data = json.loads(r.text)
     context = {'cat_photo_url': data['url']}
     return render(request, 'cat_photos.html', context)
 
 def get_cat_photos_service_2(request):
-    url = "http://127.0.0.1:8002/"
+    url = "http://172.22.0.3:8000/"
     r = requests.get(url)
     data = json.loads(r.text)
     context = {'cat_photo_url': data['url']}
     return render(request, 'cat_photos.html', context)
 
 def get_cat_photos_service_3(request):
-    url = "http://127.0.0.1:8003/"
+    url = "http://172.22.0.4:8000/"
     r = requests.get(url)
     data = json.loads(r.text)
     context = {'cat_photo_url': data['url']}
